@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guvi Tasks Chella</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Blog-JavaScript</h1>
+    <div class="container">
+      <div class="tabs">
+        <div class="tab" id="tab1">HTML 1.1 vs HTML2</div>
+        <div class="tab" id="tab2">Object in JS</div>
+        <div class="tab" id="tab3">Window Objects & Documents-Javascript</div>
+      </div>
+
+      <div class="content-container">
+        <div class="tab-content" id="tab1-content">
+          <p>
+            HTTP/1.1 (Hypertext Transfer Protocol 1.1) and HTTP/2 are both
+            protocols used for communication on the World Wide Web. While they
+            share the same basic purpose of enabling communication between
+            clients and servers, there are several key differences between the
+            two:
+            <br />
+            Multiplexing: HTTP/1.1: In HTTP/1.1, each request and response is
+            processed sequentially, and only one request/response is allowed to
+            be in progress at a time on a connection. HTTP/2: HTTP/2 introduces
+            multiplexing, allowing multiple requests and responses to be
+            processed in parallel over a single connection. This can
+            significantly improve page load times and overall performance.
+            <br />
+            Header Compression: HTTP/1.1: Headers are not compressed, and
+            redundant header information is often resent with each request and
+            response. HTTP/2: Headers are compressed using a new, more efficient
+            algorithm (HPACK), reducing overhead and improving performance,
+            especially for websites with a large number of small resources.
+            Binary Protocol: HTTP/1.1: It uses a text-based protocol, which is
+            human-readable but can be inefficient in terms of parsing and
+            processing. HTTP/2: It uses a binary protocol, which is more
+            efficient to parse and process by machines. While it's not
+            human-readable, it is more compact and allows for faster data
+            transmission. Server Push: HTTP/1.1: The server can only respond to
+            client requests. HTTP/2: Introduces server push, allowing the server
+            to send additional resources to the client before the client
+            explicitly requests them. This can be beneficial for loading
+            resources proactively. Connection Handling: HTTP/1.1: Requires
+            multiple connections for parallelism, which can lead to increased
+            latency and resource usage. HTTP/2: Allows multiple streams within a
+            single connection, reducing the need for multiple connections and
+            improving efficiency. Prioritization: HTTP/1.1: No built-in
+            mechanism for prioritizing requests. HTTP/2: Supports request
+            prioritization, allowing more important resources to be requested
+            and delivered first, improving overall page load performance. In
+            summary, HTTP/2 is designed to address the limitations and
+            performance bottlenecks of HTTP/1.1, offering improvements in terms
+            of speed, efficiency, and support for modern web applications. The
+            adoption of HTTP/2 has become more widespread, and it is
+            increasingly becoming the standard for web communication.
+          </p>
+        </div>
+
+        <div class="tab-content" id="tab2-content">
+          <p>
+            In JavaScript, objects are a fundamental data type and a key aspect
+            of the language's flexibility. Objects are used to represent and
+            store data in the form of key-value pairs. The internal
+            representation of objects in JavaScript is based on a few key
+            concepts: Properties: Objects in JavaScript have properties, which
+            are essentially key-value pairs. The key is a string or symbol, and
+            the value can be of any data type, including other objects.
+            Properties can be accessed using dot notation (object.property) or
+            square bracket notation (object['property']). Methods: In addition
+            to properties, objects can also have methods. Methods are functions
+            associated with an object and are defined as properties whose values
+            are functions. Prototype Chain: Each object in JavaScript is linked
+            to a prototype object from which it inherits properties and methods.
+            This forms a chain of objects known as the prototype chain. If a
+            property or method is not found on an object, JavaScript looks up
+            the prototype chain until it finds the property or until it reaches
+            the end of the chain. Constructor: Objects can be created using
+            constructor functions or literal notation. Constructor functions are
+            used to create and initialize objects with specific properties and
+            methods. Constructor functions often use the this keyword to refer
+            to the object being created. Object Literal Notation: Objects can be
+            created using literal notation by enclosing key-value pairs in curly
+            braces {}.
+          </p>
+        </div>
+
+        <div class="tab-content" id="tab3-content">
+          <p>
+            In JavaScript, both the document and window objects are fundamental
+            components of the browser's Document Object Model (DOM), but they
+            represent different aspects of the environment. Here are the main
+            differences between the document and window objects: Scope:
+            document: The document object represents the HTML document itself.
+            It provides methods and properties to interact with the content
+            within the HTML document, such as elements, attributes, and styles.
+            window: The window object represents the browser window or tab. It
+            is the global object in the browser environment and contains
+            properties and methods related to the browser window, such as
+            navigation, location, history, and the global scope for JavaScript.
+            Hierarchy: document: The document object is a property of the window
+            object. You can access it using window.document or simply document.
+            window: The window object is the top-level object in the browser's
+            JavaScript environment. All global variables and functions are
+            properties of the window object. Responsibilities: document: Manages
+            the structure and content of the HTML document. It provides methods
+            for selecting, manipulating, and creating elements within the
+            document. window: Manages the browser window and its features. It
+            includes methods for controlling navigation, handling events, and
+            accessing information about the browser environment. Lifetime:
+            document: The document object is created when the HTML document is
+            parsed and loaded. It represents the current state of the document.
+            window: The window object is created when the browser window is
+            opened and persists throughout the lifetime of the page. It
+            represents the entire browser window and provides a global context
+            for JavaScript. Global Scope: document: The document object is not
+            part of the global scope by default. It is a property of the window
+            object. window: The window object is always in the global scope, and
+            global variables and functions are properties of the window object.
+            In summary, while the document object deals specifically with the
+            content and structure of the HTML document, the window object
+            represents the broader browser environment and provides methods and
+            properties related to the entire browser window.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
