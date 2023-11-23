@@ -112,11 +112,6 @@ console.log(myCircle.toString()); // Output: Circle[radius=2.5, color=blue]
 console.log(myCircle.getArea()); // Output: Some calculated area value
 console.log(myCircle.getCircumference()); // Output: Some calculated circumference value
 
-
-
-
-
-
 // Question (3). Write a person class to hold all the details
 
 class Person {
