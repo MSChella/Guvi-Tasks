@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <form>
+      <label for="name" class="required" style="font-weight: bold;">Name <br>
+        <input  type="text" id="name" name="name" placeholder="first name" required />
+        <input  type="text"id="name" name="name" placeholder="Last name" required /><br /><br />
+        </label><br />
+
+      <label for="email" class="required" style="font-weight: bold;">Email</label><br />
+      <input type="email" id="email" name="email" required /><br><br>
+      <label style="font-weight: bold;">Your Experience</label><br />
+      <div class="star-rating" onclick="captureRating(event)">
+
+        <label for="5star" style="color: #ffdd00;font-size: larger;">&#9733</label>
+        <label for="4star" style="color: #ffdd00;font-size: larger;" >&#9733</label>
+        <label for="3star" style="color: #ffdd00;font-size: larger;">&#9733</label>
+        <label for="2star" style="color: #ffdd00;font-size: larger;">&#9733</label>
+        <label for="1star" style="color: #ffdd00;font-size: larger;">&#9733</label>
+      </div>
+
+      <label> <strong>How Satisfied are you with</strong></label><br>
+      <label>
+        <input type="radio" name="feedback" value="very unsatisified">Very Un-Satisfied
+        <input type="radio" name="feedback" value="unsatisified">Un-Satisfied
+        <input type="radio" name="feedback" value="neutral">Neutral
+        <input type="radio" name="feedback" value="satisfied">Satisfied
+        <input type="radio" name="feedback" value="very satisfied">Very Satisfied
+    </label><br>
+
+    <label><strong>Purchase:</strong>
+    <input type="radio" name="purchase">
+    </label>
+    </form>
+  </body>
+</html>
