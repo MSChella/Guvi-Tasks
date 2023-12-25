@@ -24,7 +24,7 @@ const imgFoxEle = document.getElementById("image_fox")
 
 
 async function getBearImage(json) {
-    await fetch("https://random-d.uk/api or https://random-d.uk/api/v2", { method: "GET" })
+    await fetch("https://dog.ceo/api/breeds/image/random", { method: "GET" })
         .then((res) => res.json())
         .then((json) => {
             imgFoxEle.innerHTML = `<img src = '${json.message}' alt='Fox Image'/>`
