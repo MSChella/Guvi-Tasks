@@ -1,21 +1,72 @@
 
-body{
-align-items: center;
-justify-content: center;
+
+.header-main{
+    width: 100vw;
+    height: 50px;
+background-color: rgb(91, 69, 69);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 
 }
 
-.nav-tabs{
-display: flex;
+.header--logo{
+border-color: aqua;
+}
 
+.nav{
+    border-color: aqua;
+    display: flex;
 
+}
+
+.header--sm{
+
+    border-color: aqua;
 }
 
 .container{
-   width: 100vh;
-   height: 100vh;
-    margin: 30px;
-    padding: 20px;
-    align-items: center;
+   margin: 30px;
+   width: 4%;
+   height: 50%;
+    background-color: aqua;
+  
+   display: flex;
+    align-items: flex-end;
     justify-content: center;
+}
+
+.flex-container{
+   margin-left: 70px;
+    width: 90%;
+    height: 80%;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+
+    width: 33%;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_dog_gallery{
+   
+
+width: 70%;
+height: 70%;
+
+background-color: #fff;
+
+
+}
+
+.btn.btn.btn-primary{
+    justify-content: flex-end;
 }
